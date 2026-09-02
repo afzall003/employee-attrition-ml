@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Environment variables
+.env
+.env.*
+
+# Data
+data/raw/*
+data/interim/*
+data/processed/*
+
+# ML artifacts
+models/*
+!models/.gitkeep
+
+# Generated reports
+reports/figures/*
+reports/metrics/*
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
