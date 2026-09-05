@@ -3,38 +3,51 @@ __pycache__/
 *.py[cod]
 *.pyo
 
-# Virtual environment
+# Virtual environments
 .venv/
 venv/
 env/
 
+# Testing
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+coverage.xml
+htmlcov/
+
 # Jupyter
 .ipynb_checkpoints/
-
-# Environment variables
-.env
-.env.*
-
-# Data
-data/raw/*
-data/interim/*
-data/processed/*
-
-# ML artifacts
-models/*
-!models/.gitkeep
-
-# Generated reports
-reports/figures/*
-reports/metrics/*
 
 # IDE
 .vscode/
 .idea/
 
+# Environment / secrets
+.env
+.env.*
+
+# Logs
+*.log
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
 # OS
 .DS_Store
 Thumbs.db
 
-# Logs
-*.log
+# Temporary files
+*.tmp
+*.temp
+
+# Backup / temporary source files
+*.backup_*
+*.before_*
+
+# Project data, trained models, and generated reports
+data/
+models/
+reports/

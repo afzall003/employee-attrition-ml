@@ -1,0 +1,27 @@
+services:
+  employee-attrition-api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+
+    image: employee-attrition-api:1.3.0
+
+    container_name: employee-attrition-api
+
+    ports:
+      - "8000:8000"
+
+    restart: unless-stopped
+
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "python",
+          "-c",
+          "import urllib.request; urllib.request.urlopen('http://127.0.0.1:8000/health')"
+        ]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+      start_period: 10s

@@ -13,7 +13,7 @@ DATA_PATH = (
     PROJECT_ROOT
     / "data"
     / "raw"
-    / "employee_attrition_dataset.csv"
+    / "employee_attrition_dataset_v2.csv"
 )
 
 
